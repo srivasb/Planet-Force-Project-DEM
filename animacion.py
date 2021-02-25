@@ -6,6 +6,7 @@ import matplotlib.animation as animation
 import pandas as pd
 import numpy as np
 
+
 # Data
 path = './planeta.csv'
 columns=['x','y']
@@ -19,6 +20,9 @@ for i in range(len(df)):
     if i%100==0:
         x.append(df.x[i])
         y.append(df.y[i])
+
+style='seaborn-dark-palette'
+plt.style.use(style)
 
 # Figure
 fig = plt.figure()
@@ -37,8 +41,8 @@ def update(curr):
     return fig,
 
 a = animation.FuncAnimation(fig,func=update,interval=100,repeat=False) # animation class instance
-# plt.show()
+plt.show()
 
 # To save
-writer = animation.PillowWriter(fps=100)  
-a.save("animation.gif", writer=writer)  
+# writer = animation.PillowWriter(fps=100)
+# a.save("animation.gif", writer=writer)
