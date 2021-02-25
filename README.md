@@ -2,7 +2,6 @@
 
 Discrete Element Method use to solve the dynamic of the gravitational law force
 
-<img src="https://render.githubusercontent.com/render/math?math=\vec{F}=%2-G%2\frac{Mm}{r^{3}}\vec{r}">
+<img src="https://render.githubusercontent.com/render/math?math=%5Cfrac%7BF%7D%3D-G%5Cfrac%7BMm%7D%7Br%5E3%7D%5Cvec%7Br%7D">
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i %2B\pi} =x%2B1">
 
